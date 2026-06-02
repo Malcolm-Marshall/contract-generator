@@ -1,0 +1,158 @@
+Project Details:
+
+Project Overview:
+The goal of this project is to build a custom catio for {{customerName}}, providing a safe and enjoyable outdoor space for their cat(s). The catio will be built with high-quality materials, incorporating various features for the cats' comfort and entertainment. Materials will be ordered to the customer's address.
+
+{{projectAddress}}
+
+
+Description:
+{{projectDescription}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Construction Agreement
+
+Cat-Topia, LLC
+
+66 S Logan St
+Denver CO 80209
+lance@thecattopia.com
+720-201-0591
+
+
+Contractor Business Name: {{contractorBusinessName}}	
+Contractor phone number: {{contractorPhone}}
+Contract for Outdoor Cat Enclosure Project
+
+This contract is made between Cat Topia and {{contractorName}} for the building of the outdoor cat enclosure for Cat Topia’s client.
+The work is set to begin on {{startDate}} or before and will be completed according to the following terms:
+
+Scope of Work:
+
+The contractor agrees to provide labor only for the construction of the outdoor cat enclosure for Cat Topia, in accordance with the SketchUp plans and construction videos agreed upon by both parties. These plans will be shared in a Google Drive folder and provided to the contractor. Cat Topia is responsible for drop shipping all necessary materials for the project.
+
+Additional Materials:
+
+Should the contractor need to purchase additional materials during the project, they must obtain prior approval from Cat Topia. The contractor must provide a detailed list of the additional items required, including the reason for the request and the estimated cost. Upon approval, if the contractor has to run to the store and pick up the additional items, Cat Topia will reimburse the contractor for the approved materials within 5 business days of receiving the purchase receipt.
+
+
+Payment:
+The total price of the job is ${{jobPrice}}. Payment will be disbursed as follows:
+1.	Initial Payment (20%):
+○	After completion of the first day of work, Cat Topia will send 20% of the total price via Workmarket (ACH, Paypal, or prepaid Visa) to the account provided by the contractor.
+2.	Final Payment (80%):
+○	The remaining 80% of the payment will be released only after the following conditions are met:
+Walkthrough Checklist Requirements:
+The contractor must conduct an on-site walkthrough of the completed work with the client. The contractor shall coordinate with the client in advance to ensure their availability for completing the walkthrough checklist together.
+
+During the walkthrough, the contractor must fill out the official checklist provided by Cat Topia. This checklist includes verification of the following:
+    - Completion of all construction tasks as per the agreed scope of work.
+    - Client satisfaction with the workmanship and materials.
+    - Any additional notes or observations from the client regarding the project.
+The checklist must be signed by both the client and the contractor to confirm:
+    - The client’s approval of the completed work.
+    - The contractor’s acknowledgement that the job is finished according to the agreed-upon terms.
+Submission Process:
+The completed and signed checklist must be submitted through the Cat Topia online submission form.
+Final Payment Release:
+Once Cat Topia receives and reviews the completed walkthrough checklist, the remaining payment will be processed and released within 1-5 business days via the previously agreed payment method.
+Note: Failure to complete or submit the walkthrough checklist may result in a delay of the final payment. If discrepancies arise during the walkthrough, payment release will be contingent on resolving the issues to the client’s and Cat Topia’s satisfaction.
+
+Cancellation and Refund Policy:
+	1.	If Cat Topia cancels the job before it commences, a full refund of the initial 20% deposit will be issued within 5 business days.
+	2.	If the job is canceled by Cat Topia after commencement but before completion, a partial refund will be issued, determined on a case-by-case basis, depending on the amount of work completed.
+	3.	In the event of non-performance or breach of contract by the service provider, Cat Topia reserves the right to withhold payment of the remaining balance and seek a refund of the initial deposit.
+	4.	If the service provider experiences unforeseen circumstances that prevent them from completing the job, both parties will negotiate a fair and reasonable resolution, which may include a refund, rescheduling, or other mutually agreed-upon terms.
+	5.	Any refund requests must be submitted in writing within 10 business days of the occurrence of the event leading to the request.
+	6.	Refunds will be processed using the same method by which the initial payment was made via Workmarket (ACH, Paypal, or prepaid Visa).
+
+
+
+Indemnification:
+The Contractor agrees to indemnify, defend, and hold harmless Cat Topia, its managers, officers, employees, representatives, and clients (collectively, the “Indemnified Parties”) from and against any and all claims, liabilities, damages, losses, judgments, costs, or expenses (including reasonable attorneys’ fees) arising out of or related to:
+1.	Any personal injury, property damage, or death caused by the Contractor’s acts or omissions;
+2.	Any breach of this Agreement by the Contractor;
+3.	The Contractor’s failure to comply with applicable laws, codes, or licensing requirements;
+4.	Any negligent, reckless, or intentionally wrongful act by the Contractor or its workers.
+
+Change Orders:
+If Cat Topia receives a request for changes to the scope of work from the contractor, Cat Topia will review the requested changes and pass them on to the client. The contractor will provide a written change order request outlining the requested changes and the additional costs associated with those changes.
+
+Cat Topia will have the option to approve or reject the change order request before any additional work is performed.
+
+If a client requests a change order from the contractor, the request must be passed on to Cat Topia for approval.
+
+Timeliness and Quality of Work:
+
+The contractor agrees to complete the work in a timely manner and with the highest level of quality. The work will be performed in a professional and workmanlike manner and will not be sloppy or cutting any corners.
+
+
+
+Questions and Communication:
+
+The contractor agrees to direct all questions and communication regarding the project to Cat Topia, and not to the client unless it is necessary to provide input or clarification. Any communication between the contractor and client will be done through Cat Topia.
+
+Attendance Requirement:
+
+The contractor agrees to ensure that workers involved in the project are present and working on-site every business day for the duration of the project, unless otherwise communicated and agreed upon with Cat Topia. If a situation arises where this requirement cannot be met (e.g., illness, emergency, etc.), the contractor agrees to notify Cat Topia as soon as possible to discuss potential solutions or adjustments to the project timeline. Continuous or frequent absences without proper communication and justification may be considered a breach of this contract.
+
+
+Insurance:
+
+The contractor will carry liability insurance and workers’ compensation insurance for the project’s duration. Proof of insurance will be provided to Cat Topia if requested.
+
+Contractor Licensing:
+
+The contractor represents and warrants that they hold a valid and current license to perform the work described in this contract, in compliance with all applicable federal, state, and local laws, regulations, and codes. The contractor agrees to provide Cat Topia with a copy of their license upon request and to maintain their license in good standing throughout the duration of the project.
+
+
+
+Communication Requirement:
+
+The contractor agrees to maintain open, frequent, and professional communication with Cat Topia throughout the duration of the project. All project updates, modifications, problems, delays, and any other relevant information must be communicated promptly to Cat Topia, preferably via written form such as email or text for clear documentation. The contractor will establish a regular communication schedule, to be determined upon the commencement of the project, to update Cat Topia on the project’s progress, expected milestones, and any potential issues or concerns. Failure to adhere to this communication requirement may be considered a breach of contract, depending on the severity and frequency of such failures.
+
+Confidentiality:
+
+The contractor agrees not to disclose any price or cost information regarding the outdoor cat enclosure project to the client while at the property.
+
+Cleanup:
+The contractor will haul off all excess trash from the job site when the enclosure is complete.
+
+Signatures:
+
+By signing below, both parties agree to the terms of this contract.
+
+Cat Topia
+By: {{catTopiaSigner}}
+Signature: _______________________________
+
+Contractor Business Name: {{contractorBusinessName}}
+Contractor Name: {{contractorName}}
+Contractor Signature: __________________________
+Date: {{contractDate}}
+
