@@ -187,5 +187,5 @@ function escapeHtml(str) {
 		.replace(/'/g, '&#39;');
 }
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.listen(port, () => console.log('Contract PDF server listening on', port));
