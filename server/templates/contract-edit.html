@@ -249,6 +249,14 @@
     <div class="page-shell">
         <div class="container">
         <form class="left-panel" id="contractForm" autocomplete="off" onsubmit="return false;">
+            <div class="form-group" style="margin-bottom:8px; padding:8px 6px; border-radius:8px; background:#fff; border:1px solid rgba(203,213,225,0.6)">
+                <label style="font-weight:700; margin:0 0 6px; display:block; font-size:0.95rem">Saved contractor</label>
+                <div style="display:flex; gap:8px; align-items:center;">
+                    <select id="savedContractors" style="min-width:160px; padding:6px 8px; border-radius:8px; border:1px solid #cbd5e1; background:#fff"></select>
+                    <button id="saveContractorBtn" type="button" class="copy-btn">Save</button>
+                    <button id="deleteContractorBtn" type="button" class="copy-btn">Delete</button>
+                </div>
+            </div>
             <div class="form-group">
                 <label for="customerName">Customer Name</label>
                 <input id="customerName" name="customerName" placeholder="Customer Name" autocomplete="off" />
@@ -291,8 +299,10 @@
                 <input id="contractDate" name="contractDate" type="date" />
             </div>
             <div class="actions">
-                <input id="filename" placeholder="contract.pdf" value="contract.pdf" style="width:220px" />
-                <button id="download" type="button">Download PDF</button>
+                <div style="display:flex; gap:8px; margin-left:auto; align-items:center;">
+                    <input id="filename" placeholder="contract.pdf" value="contract.pdf" style="width:160px; padding:6px 8px; border-radius:8px;" />
+                    <button id="download" type="button">Download PDF</button>
+                </div>
             </div>
             <div class="actions" style="margin-top:10px;">
                 <button id="copyBtn" type="button" class="copy-btn">Copy to Clipboard</button>
@@ -300,6 +310,8 @@
         </form>
         <div class="right-panel" style="flex:1">
             <label style="font-weight:bold; display:block; margin-bottom:8px; color: #334155;">Preview</label>
+            <label style="font-weight:italic; display:block; margin-bottom:8px; color: #58316a;">For dem DSB's</label>
+
             <div class="preview-toolbar">
                 <button type="button" onclick="formatText('bold')"><strong>B</strong></button>
                 <button type="button" onclick="formatText('italic')"><em>I</em></button>
@@ -394,6 +406,96 @@
         function updateLatestPreviewHtml() {
             latestPreviewHtml = document.getElementById('preview').innerHTML;
         }
+
+        // --- Saved contractors (localStorage) ---
+        const CONTRACTOR_STORAGE_KEY = 'savedContractors_v1';
+        const LAST_USED_KEY = 'lastSavedContractor_v1';
+
+        function loadSavedContractors() {
+            const raw = localStorage.getItem(CONTRACTOR_STORAGE_KEY) || '{}';
+            try {
+                return JSON.parse(raw);
+            } catch (e) {
+                return {};
+            }
+        }
+
+        function saveSavedContractors(obj) {
+            localStorage.setItem(CONTRACTOR_STORAGE_KEY, JSON.stringify(obj));
+        }
+
+        function populateSavedContractorsSelect() {
+            const map = loadSavedContractors();
+            const sel = document.getElementById('savedContractors');
+            if (!sel) return;
+            sel.innerHTML = '';
+            const empty = document.createElement('option');
+            empty.value = '';
+            empty.textContent = '— Saved contractors —';
+            sel.appendChild(empty);
+            Object.keys(map).sort().forEach(name => {
+                const opt = document.createElement('option');
+                opt.value = name;
+                opt.textContent = name;
+                sel.appendChild(opt);
+            });
+            // Do not auto-apply the last-used contractor so the form defaults to blank.
+            // The last-used value is still remembered but selection remains empty until the user chooses.
+            const last = localStorage.getItem(LAST_USED_KEY);
+            if (last && map[last]) {
+                // leave sel.value as '' to default to a blank form
+            }
+        }
+
+        function applySavedContractor(name) {
+            const map = loadSavedContractors();
+            const data = map[name];
+            if (!data) return;
+            for (const k of formFields) {
+                const el = document.getElementById(k);
+                if (!el) continue;
+                el.value = data[k] || '';
+            }
+            localStorage.setItem(LAST_USED_KEY, name);
+            updatePreview();
+        }
+
+        function saveContractor() {
+            const defaultName = document.getElementById('contractorBusinessName').value || document.getElementById('contractorName').value || '';
+            const name = window.prompt('Save contractor as:', defaultName).trim();
+            if (!name) return;
+            const map = loadSavedContractors();
+            map[name] = getFormValues();
+            saveSavedContractors(map);
+            localStorage.setItem(LAST_USED_KEY, name);
+            populateSavedContractorsSelect();
+        }
+
+        function deleteContractor() {
+            const sel = document.getElementById('savedContractors');
+            if (!sel) return;
+            const name = sel.value;
+            if (!name) return alert('Select a saved contractor to delete');
+            if (!confirm(`Delete saved contractor "${name}"?`)) return;
+            const map = loadSavedContractors();
+            delete map[name];
+            saveSavedContractors(map);
+            localStorage.removeItem(LAST_USED_KEY);
+            populateSavedContractorsSelect();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            populateSavedContractorsSelect();
+            const sel = document.getElementById('savedContractors');
+            if (sel) sel.addEventListener('change', (e) => {
+                const name = e.target.value;
+                if (name) applySavedContractor(name);
+            });
+            const saveBtn = document.getElementById('saveContractorBtn');
+            if (saveBtn) saveBtn.addEventListener('click', saveContractor);
+            const delBtn = document.getElementById('deleteContractorBtn');
+            if (delBtn) delBtn.addEventListener('click', deleteContractor);
+        });
 
         function renderHtmlFromText(text) {
             const blocks = String(text)
